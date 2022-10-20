@@ -6,7 +6,7 @@ public class Main {
 // чтобы два раза не повторять код оставила только банкомат
 
 
-// создаем терминал, две карты (разовая, школьная (0)), банкомат
+// создаем терминал, две карты (разовая, школьная (1)), банкомат
         Terminal terminal1 = new Terminal();
         Fixed card1 = new Fixed(1001, 1);
         OneTimePayment card2 = new OneTimePayment(2001);

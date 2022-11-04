@@ -16,7 +16,6 @@ public enum Seasons {
     }
 
     public String getDescription(){
-    public String getDescription(){
         return "Холодное время года";
     }
 }

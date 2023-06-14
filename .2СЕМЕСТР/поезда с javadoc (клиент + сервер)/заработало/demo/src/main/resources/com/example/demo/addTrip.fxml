@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/20-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AddTripController">
+   <children>
+       <Button fx:id="tripsPage" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#openTripList" text="Рейсы">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+       <Button fx:id="addTripPage" layoutX="75.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #3D3B8E;" text="Добавление рейса" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+       <Button fx:id="trainsPage" layoutX="209.0" layoutY="14.0" mnemonicParsing="false" onAction="#openTrainList" text="Поезда">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+       <Button fx:id="addTrainPage" layoutX="276.0" layoutY="14.0" mnemonicParsing="false" onAction="#openAddTrain" prefHeight="26.0" prefWidth="143.0" text="Добавление поезда">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="fromWhere" layoutX="79.0" layoutY="92.0" prefHeight="26.0" prefWidth="190.0" promptText="Город" />
+      <Label layoutX="79.0" layoutY="63.0" text="Откуда " />
+      <DatePicker fx:id="dateOfDeparture" layoutX="390.0" layoutY="91.0" prefHeight="26.0" prefWidth="190.0" promptText="01.01.23" />
+      <TextField fx:id="tripDestination" layoutX="79.0" layoutY="167.0" prefHeight="26.0" prefWidth="190.0" promptText="Город" />
+      <Label layoutX="79.0" layoutY="138.0" text="Куда" />
+      <TextField fx:id="basicPrice" layoutX="79.0" layoutY="236.0" prefHeight="26.0" prefWidth="190.0" promptText="1000" />
+      <Label layoutX="79.0" layoutY="207.0" text="Базовая цена" />
+      <TextField fx:id="tripTrain" layoutX="79.0" layoutY="310.0" prefHeight="26.0" prefWidth="190.0" promptText="Поезд" />
+      <Label layoutX="79.0" layoutY="281.0" text="Поезд" />
+      <Label layoutX="390.0" layoutY="63.0" text="Дата отправления" />
+      <Label layoutX="391.0" layoutY="138.0" text="Время отправления" />
+      <DatePicker fx:id="dateOfArrival" layoutX="390.0" layoutY="235.0" prefHeight="26.0" prefWidth="190.0" promptText="01.01.23" />
+      <Label layoutX="390.0" layoutY="207.0" text="Дата приезда" />
+      <Label layoutX="390.0" layoutY="282.0" text="Время приезда" />
+      <TextField fx:id="timeOfArrival" layoutX="390.0" layoutY="309.0" prefHeight="26.0" prefWidth="190.0" promptText="12:00" />
+      <TextField fx:id="timeOfDeparture" layoutX="390.0" layoutY="167.0" prefHeight="26.0" prefWidth="190.0" promptText="12:00" />
+      <Button layoutX="296.0" layoutY="360.0" mnemonicParsing="false" onAction="#getNewTripInfoFromForm" text="Добавить" />
+      <Label fx:id="invalidTripInput" layoutX="456.0" layoutY="18.0" prefHeight="18.0" prefWidth="203.0" textFill="#c90000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="featureUnderDevelopment" layoutX="60.0" layoutY="339.0" prefHeight="18.0" prefWidth="576.0" textAlignment="CENTER" textFill="#ff62b6">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
